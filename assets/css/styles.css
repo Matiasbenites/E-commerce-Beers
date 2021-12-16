@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+*{
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+.carousel{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.nav-link:hover{
+    color: #1a1a1a;
+}
+
+
+.hero{
+    width: 100%;
+}
+
+.sizeicon{
+    letter-spacing: 10px;
+    font-size: 25px;
+    color: dimgrey;
+}
+.sizeicon2{
+    letter-spacing: 10px;
+    font-size: 15px;
+    color: dimgray;
+}
+.heromain{
+    position: relative;
+    top: 190px;
+    align-items: center;
+}
+.paragmain{
+    font-size: 40px;
+}
+.titlemain{
+    font-size: 80px;
+
+}
+
+.zoomimg:hover{
+    transition: 1s;
+    transform:scale(1.05);
+}
+
+.zoomimg::before{
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+
+.zoomimg:hover::after{
+    transition: 0.5s;
+    transform: scale(0);
+    mix-blend-mode: multiply;
+}
+
+.card-img-overlay{
+    display: flex;
+    align-items: center;
+}
+
+.card-img-overlay h5{
+    font-size: 70px;
+}
+.footer .container .d-flex p{
+    font-size: 10px;
+}
+
+@media(max-width:960px){
+    .cont-header{
+        text-align: center;
+    }
+    .movement{
+        position: relative;
+        left: 30px;
+    }
+    .cont-vid video{
+        position: relative;
+        width: 100%;
+    }
+}
